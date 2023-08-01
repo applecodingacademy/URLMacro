@@ -60,6 +60,7 @@ public struct StringifyMacro: ExpressionMacro {
 @main
 struct URLMacroPlugin: CompilerPlugin {
     let providingMacros: [Macro.Type] = [
+        StringifyMacro.self,
         URLMacro.self
     ]
 }
